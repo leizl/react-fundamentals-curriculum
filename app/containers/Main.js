@@ -1,14 +1,21 @@
 var React = require('react');
 
-var HelloWorld = React.createClass({
-  render: function () {
+var styles = {
+  container: {
+    width: '100%',
+    height: '92%'
+  }
+}
+
+var Main = React.createClass({
+  render: function() {
     return (
-      <div>
-        <h1>Main.js Header</h1>
+      <div style={styles.container}>
+        <h1>Main.js Header Test</h1>
         {this.props.children}
       </div>
     )
   }
 })
 
-module.exports = HelloWorld;
+module.exports = Main;
