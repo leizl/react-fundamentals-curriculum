@@ -33,7 +33,7 @@ function getCurrentWeather(city) {
 
   return axios.get(APIurl)
     .then(function(weatherData) {
-      console.log(weatherData.data)
+      return weatherData.data
     })
 }
 
@@ -43,7 +43,7 @@ function getForecast(city) {
 
   return axios.get(APIurl)
     .then(function(forecastData) {
-      console.log(forecastData.data)
+      return forecastData.data
     })
 }
 
